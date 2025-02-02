@@ -4,6 +4,7 @@ import Home from "./Home";
 import About from "./About";
 import JoinUs from "./JoinUs";
 import Login from "./Login.jsx";
+import Doctors from "./Doctors";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Route path="/about" element={<About />} key="about" />
                 <Route path="/join-us" element={<JoinUs />} />
                 <Route path="/login" element={<Login />} />
+                <Route path="/editdoctors/:hospitalId" element={<Doctors />} />
             </Routes>
         </Router>
     );

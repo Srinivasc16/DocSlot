@@ -84,3 +84,155 @@
     transform: translateY(-1px);
     background-color: #5f84a3; /* Active color change */
 }
+/* Dropdown Styles */
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.user-dropdown button {
+    color: white;
+    font-size: 0.9rem;
+    padding: 10px;
+    font-weight: 400;
+    background-color: #40513B;
+    border-radius: .25rem;
+    transition: .2s .1s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
+}
+
+.user-dropdown button:hover {
+    background-color: #9DC08B;
+    transform: translateY(-5px);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 160px;
+    z-index: 10;
+}
+
+.dropdown-menu button { /* Red for logout button */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+}
+
+.dropdown-menu button:hover {
+    background-color: #8d9b5b;
+}
+/* Styles for the email box */
+.email-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 300px;
+    border-radius: 8px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.email-box h3 {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #333;
+}
+
+.email-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.email-box input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 80%;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.email-box input:focus {
+    border: 1px solid #4CAF50;
+}
+
+.email-box button {
+    padding: 10px;
+    border: none;
+    background-color: #40513B;
+    width: 50%;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.email-box button:hover {
+    background-color: #45a049;
+}
+
+.email-box button[type="button"] {
+    background-color: #f44336;
+}
+
+.email-box button[type="button"]:hover {
+    background-color: #e53935;
+}
+
+/* Close button (cross) */
+.email-box .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.email-box .close-btn:hover {
+    color: #333;
+}
+
