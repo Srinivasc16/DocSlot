@@ -5,19 +5,25 @@
     --active-color: #5f84a3;
     --text-color: #333;
 }
-
+body {
+    padding-top: 80px; /* Adjust this value to prevent content from overlapping the navbar */
+    overflow-x: hidden;
+}
 .navbar {
-    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed; /* Fix navbar at the top */
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* Ensure full width */
+    max-width: 1200px; /* Adjust max width as needed */
+    z-index: 1000; /* Keep it above other elements */
+    background: white;
     padding: 12px 20px;
-    margin: 0;
-    border: 0;
-    border-radius: 16px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
     transition: box-shadow 0.3s ease-in-out;
 }
-
 .navbar:hover {
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
 }
 
 .navsection {
