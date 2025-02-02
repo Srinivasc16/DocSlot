@@ -1,0 +1,113 @@
+.doctors-container {
+    font-family: Arial, sans-serif;
+    margin: 30px 100px;
+}
+
+.doctors-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px/* This will space out the form and the doctors list */
+}
+
+.add-doctor-form {
+    width: 40%;
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%);
+    border-radius: 40px;
+    padding: 25px 35px;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 4px 4px 15px rgba(64, 81, 59, 0.4);
+}
+
+.add-doctor-form h3 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    color: #40513B
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 80%;
+    background: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    box-shadow: #40513B 0px 10px 10px -5px;
+    border-inline: 2px solid transparent;
+}
+
+.add-doctor-btn {
+    display: block;
+    width: 50%;
+    font-weight: bold;
+    background: linear-gradient(to right, #40513B, #8d9b5b);
+    color: white;
+    padding-block: 15px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.add-doctor-btn:hover {
+    transform: scale(1.03);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.doctors-list {
+    width: 55%;
+}
+
+.doctor-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.doctor-card {
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%);
+    border-radius: 40px;
+    padding: 25px 35px;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 4px 4px 15px rgba(64, 81, 59, 0.4);
+    transition: 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: scale(1.03);
+}
+
+.doctor-card h4 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.doctor-card p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+.doctor-card button {
+    display: block;
+    width: 50%;
+    font-weight: bold;
+    background: linear-gradient(to right, #40513B, #8d9b5b);
+    color: white;
+    padding-block: 10px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}

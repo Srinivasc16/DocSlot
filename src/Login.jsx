@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, sendPasswordResetEmail } from 'firebase/auth';
+import { useNavigate } from 'react-router-dom';  // Import useNavigate
 import './login.css'; // Import your CSS file
 
 const Login = () => {
@@ -10,6 +11,7 @@ const Login = () => {
     const [isForgotPassword, setIsForgotPassword] = useState(false); // State for forgot password
 
     const auth = getAuth();
+    const navigate = useNavigate(); // Initialize navigate
 
     const handleEmailPasswordSignIn = async (e) => {
         e.preventDefault();
@@ -18,7 +20,7 @@ const Login = () => {
         try {
             await signInWithEmailAndPassword(auth, email, password);
             alert("Email/Password login successful!");
-            // Redirect or perform other actions after successful login
+            navigate('/'); // Redirect to the home page after login
         } catch (error) {
             console.error("Error with email/password login:", error);
             setError(error.message);
@@ -47,7 +49,7 @@ const Login = () => {
         try {
             await signInWithPopup(auth, provider);
             alert("Google login successful!");
-            // Redirect or perform other actions after successful login
+            navigate('/'); // Redirect to the home page after Google login
         } catch (error) {
             console.error("Error with Google login:", error);
             setError(error.message);
@@ -68,7 +70,6 @@ const Login = () => {
             setError(error.message);
         }
     };
-
 
     return (
         <div className="form-box">
