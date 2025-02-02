@@ -1,0 +1,118 @@
+.container {
+    padding: 20px 100px 20px 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.container h2{
+    font-size: 25px;
+}
+
+/* City Tabs - Display cities in a single row */
+.city-tabs-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.city-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.city-tab {
+    background: none;
+    border: 2px solid #ccc;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.city-tab:hover {
+    background-color: #f1f1f1;
+}
+
+.city-tab.active {
+    color: #fff;
+    background-color: #40513B;
+    font-weight: bold;
+    border: 2px solid #40513B;
+}
+
+/* Section Title - Appears Below Cities */
+.section-title {
+    background-color: #40513B;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 22px;
+    padding: 10px 15px;
+    display: inline-block;
+    margin: 20px 0;
+    width: 20%;
+    border-radius: 8px;
+}
+
+/* Clinics Grid - Displays clinic cards in a responsive grid */
+.clinics-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Auto-adjust columns */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center; /* Centers clinic cards */
+}
+
+/* Clinic Cards */
+.clinic-card {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clinic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.clinic-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.clinic-name {
+    background: #40513B;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+/* Clinic Address */
+.clinic-address {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    padding: 8px 10px;
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+/* Clinic Timings */
+.clinic-times {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 10px;
+    background: #f1f1f1;
+    border-top: 1px solid #ddd;
+}
+

@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #FCF6F5;
+    --hover-color: #7b9acc;
+    --shadow-color: rgba(0, 0, 0, 0.15);
+    --active-color: #5f84a3;
+    --text-color: #333;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 12px 20px;
+    margin: 0;
+    border: 0;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.navbar:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.navsection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlogo {
+    display: flex;
+}
+
+.navlogo img {
+    width: 300px;
+    height: 80px;
+}
+
+.navlinks {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+.navlinks nav {
+    display: flex;
+    gap: 30px;
+}
+
+.navlinks nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.7rem;
+    line-height: 14px;
+    letter-spacing: 1.2px;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #40513B;
+    border-radius: .25rem;
+    border: 0 solid;
+    overflow: hidden;
+    transition: .2s .1s;
+    clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
+}
+
+.navlinks nav a:hover {
+    cursor: pointer;
+    background-color: #9DC08B; /* Adjust hover color */
+    box-shadow: 0px 15px 20px var(--shadow-color);
+    color: #000;
+    transform: translateY(-5px);
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.navlinks nav a:active {
+    transform: translateY(-1px);
+    background-color: #5f84a3; /* Active color change */
+}

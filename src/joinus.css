@@ -1,0 +1,165 @@
+.formr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+/* From Uiverse.io by Praashoo7 */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0.4em;
+    background-color: #40513B;
+    border-radius: 25px;
+    transition: .4s ease-in-out;
+    width: 100%;
+    max-width: 500px;
+}
+
+
+#heading {
+    text-align: center;
+    margin: 2em;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 25px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: black;
+    background-color: white;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+/* Improved Input Field and Select Styling */
+input[type="text"], input[type="time"], select {
+    background: none;
+    border: 2px solid #333;
+    border-radius: 15px;
+    padding: 0.5em 1em;
+    outline: none;
+    color: black;
+    width: 100%;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="time"]:focus, select:focus {
+    border-color: #40513B   ;
+    box-shadow: 0 0 5px rgba(64, 81, 59, 0.7);
+}
+
+/* Styling the dropdown (select) element */
+select {
+    background-color: white;
+    color: black;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border: 2px solid #333;
+    border-radius: 25px;
+    width: 480px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:hover, select:focus {
+    border-color: #40513B;
+    box-shadow: 0 0 5px rgba(64, 81, 59, 0.7);
+}
+
+.input-icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: white;
+}
+
+.input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #d3d3d3;
+}
+
+.form .btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2.5em;
+    margin: 20px auto;
+}
+
+.button1 {
+    padding: 1em;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    border-radius: 5px;
+    margin-right: 0.5em;
+    border: none;
+    outline: none;
+    transition: .4s ease;
+    background-color: white;
+    color: black;
+}
+
+.button1:hover {
+    border: 2px solid white;
+    background-color: #40513B;
+    color: white;
+}
+/* Popup styling */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 2em;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.popup h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.popup p {
+    color: #555;
+    margin-bottom: 1em;
+}
+
+.popup .button1 {
+    padding: 0.5em 1em;
+    background-color: #252525;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.popup .button1:hover {
+    background-color: black;
+}
+

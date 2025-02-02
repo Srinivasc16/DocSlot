@@ -1,0 +1,25 @@
+  body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #EDF1D6;
+}
+  /* Apply styles to all scrollbars */
+  ::-webkit-scrollbar {
+    width: 8px; /* Adjust width */
+  }
+
+  /* Track (the background) */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  /* Handle (the draggable part) */
+  ::-webkit-scrollbar-thumb {
+    background: #40513B; /* Custom color */
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9DC08B;
+  }
