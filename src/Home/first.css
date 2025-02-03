@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 40px;
+    padding: 50px;
+    color: white;
 }
 
 .containe{
@@ -18,7 +19,8 @@
 
 .left h2 {
     text-align: left;
-    font-size: 70px;
+    font-size: 60px;
+    color: #4493f8;
 }
 .left p{
     text-align: left;
@@ -26,11 +28,11 @@
 }
 .right {
     padding: 30px 30px 60px;
-    border: black solid 2.5px;
+    border: white solid 2.5px;
     border-radius: 20px;
     justify-content: center;
 }
-.right img {
+.right svg {
     width: 40px;
     height: 40px;
     display: inline-block;
@@ -53,9 +55,9 @@
     border-radius: 19px;
     border: none;
     width: 150px;
-    color: #fff;
+    color: #000000;
     cursor: pointer;
-    background-color: #40513B;
+    background-color: #E0FFFF;
     transition: all 0.2s ease;
 }
 
@@ -77,14 +79,14 @@
 
 .button:hover:before {
     top: -70%;
-    background-image: radial-gradient(circle, black 20%, transparent 20%),
+    background-image: radial-gradient(circle, white 20%, transparent 20%),
     radial-gradient(circle, transparent 20%, white 20%, transparent 30%),
-    radial-gradient(circle, black 20%, transparent 20%),
     radial-gradient(circle, white 20%, transparent 20%),
-    radial-gradient(circle, transparent 10%, black 15%, transparent 20%),
-    radial-gradient(circle, black 20%, transparent 20%),
     radial-gradient(circle, white 20%, transparent 20%),
-    radial-gradient(circle, black 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, white 15%, transparent 20%),
+    radial-gradient(circle, white 20%, transparent 20%),
+    radial-gradient(circle, white 20%, transparent 20%),
+    radial-gradient(circle, white 20%, transparent 20%),
     radial-gradient(circle, white 20%, transparent 20%);
     background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
     10% 10%, 18% 18%;
@@ -112,13 +114,13 @@
 
 .button:hover::after {
     bottom: -70%;
-    background-image: radial-gradient(circle, black 20%, transparent 20%),
+    background-image: radial-gradient(circle, white 20%, transparent 20%),
     radial-gradient(circle, white 20%, transparent 20%),
-    radial-gradient(circle, transparent 10%, black 15%, transparent 20%),
+    radial-gradient(circle, transparent 10%, white 15%, transparent 20%),
     radial-gradient(circle, white 20%, transparent 20%),
-    radial-gradient(circle, black 20%, transparent 20%),
     radial-gradient(circle, white 20%, transparent 20%),
-    radial-gradient(circle, black 20%, transparent 20%);
+    radial-gradient(circle, white 20%, transparent 20%),
+    radial-gradient(circle, white 20%, transparent 20%);
     background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
     background-position: 50% 0%;
     animation: greenbottomBubbles 0.6s ease;
@@ -143,5 +145,5 @@
 }
 .button:hover{
     box-shadow: 0 0 10px black;
-    background-color: #9DC08B;
+    background-color: #B0C4DE;
 }
