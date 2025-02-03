@@ -4,6 +4,7 @@
     align-items: center;
     text-align: center;
     padding: 40px;
+    color: white;
 }
 
 .containe{
@@ -18,7 +19,8 @@
 
 .left h2 {
     text-align: left;
-    font-size: 70px;
+    font-size: 60px;
+    color: #4493f8;
 }
 .left p{
     text-align: left;

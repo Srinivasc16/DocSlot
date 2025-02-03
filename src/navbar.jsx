@@ -44,7 +44,7 @@ function Navbar() {
         <div className="navbar">
             <div className="navsection">
                 <div className="navlogo">
-                    <img src={logo} alt="logo" />
+                    <h3>Docora</h3>
                 </div>
                 <div className="navlinks">
                     <nav>

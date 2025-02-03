@@ -1,25 +1,19 @@
-:root {
-    --primary-color: #FCF6F5;
-    --hover-color: #7b9acc;
-    --shadow-color: rgba(0, 0, 0, 0.15);
-    --active-color: #5f84a3;
-    --text-color: #333;
-}
+
 body {
     padding-top: 80px; /* Adjust this value to prevent content from overlapping the navbar */
     overflow-x: hidden;
 }
 .navbar {
     position: fixed; /* Fix navbar at the top */
-    top: 5px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 100%; /* Ensure full width */
     max-width: 1200px; /* Adjust max width as needed */
     z-index: 1000; /* Keep it above other elements */
-    background: white;
+    background: #000000;
     padding: 12px 20px;
-    border-radius: 50px;
+    border-bottom: 2px solid white;
     transition: box-shadow 0.3s ease-in-out;
 }
 .navbar:hover {
@@ -35,11 +29,13 @@ body {
 
 .navlogo {
     display: flex;
+    color: white;
+    padding: 0 15px;
 }
 
-.navlogo img {
-    width: 300px;
-    height: 80px;
+.navlogo h3{
+    font-size: 30px;
+    font-family: Noah Italic;
 }
 
 .navlinks {
@@ -57,19 +53,17 @@ body {
 .navlinks nav a {
     text-decoration: none;
     color: #fff;
-    font-size: 0.7rem;
+    font-size: 1rem;
     line-height: 14px;
     letter-spacing: 1.2px;
-    padding-left: 25px;
     padding-right: 25px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 400;
-    text-transform: uppercase;
-    background-color: #40513B;
     border-radius: .25rem;
+    background: black;
     border: 0 solid;
     overflow: hidden;
     transition: .2s .1s;
@@ -78,8 +72,8 @@ body {
 
 .navlinks nav a:hover {
     cursor: pointer;
-    background-color: #9DC08B; /* Adjust hover color */
-    box-shadow: 0px 15px 20px var(--shadow-color);
+    background-color: #dda0dd; /* Adjust hover color */
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.5);
     color: #000;
     transform: translateY(-5px);
     padding-right: 30px;
@@ -93,28 +87,32 @@ body {
 /* Dropdown Styles */
 .user-dropdown {
     position: relative;
-    display: inline-block;
     cursor: pointer;
 }
 
 .user-dropdown button {
-    color: white;
+    color: black;
     font-size: 0.9rem;
-    padding: 10px;
+    padding: 10px 15px;
     font-weight: 400;
-    background-color: #40513B;
+    background: #dda0dd;
     border-radius: .25rem;
     transition: .2s .1s;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
+    border: 0 solid;
 }
 
 .user-dropdown button:hover {
-    background-color: #9DC08B;
+    cursor: pointer;
+    color: white;
+    background-color: #8a2be2; /* Adjust hover color */
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.5);
     transform: translateY(-5px);
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .dropdown-menu {
