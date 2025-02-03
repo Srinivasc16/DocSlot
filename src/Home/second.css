@@ -26,6 +26,7 @@
     background: none;
     border: 2px solid #ccc;
     font-size: 18px;
+    color: white;
     cursor: pointer;
     padding: 10px 15px;
     border-radius: 25px;
@@ -34,27 +35,29 @@
 }
 
 .city-tab:hover {
+    color: black;
     background-color: #f1f1f1;
 }
 
 .city-tab.active {
-    color: #fff;
-    background-color: #40513B;
+    color: #000000;
+    background-color: #87CEFA;
     font-weight: bold;
-    border: 2px solid #40513B;
+    border: 2px solid #87CEFA;
 }
 
 /* Section Title - Appears Below Cities */
 .section-title {
-    background-color: #40513B;
+    background-color: #87CEFA;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: black;
     font-size: 22px;
     padding: 10px 15px;
     display: inline-block;
     margin: 20px 0;
-    width: 20%;
+    text-align: center;
+    width: 15%;
     border-radius: 8px;
 }
 
@@ -88,12 +91,11 @@
 }
 
 .clinic-name {
-    background: #40513B;
-    color: white;
+    background: #87CEFA;
+    color: black;
     font-size: 16px;
     padding: 10px;
     text-align: center;
-    border-top: 1px solid #ddd;
 }
 /* Clinic Address */
 .clinic-address {

@@ -1,7 +1,7 @@
 /* Container for the whole login box */
 .form-box {
     max-width: 350px;
-    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%);
+    background: linear-gradient(0deg, rgb(135, 206, 250) 0%, rgb(244, 247, 251) 100%);
     border-radius: 40px;
     padding: 25px 35px;
     border: 5px solid rgb(255, 255, 255);
@@ -14,7 +14,7 @@
     text-align: center;
     font-weight: 900;
     font-size: 30px;
-    color: #40513B
+    color: black;
 }
 
 /* Styling for the form elements */
@@ -67,7 +67,7 @@
     display: block;
     width: 50%;
     font-weight: bold;
-    background: linear-gradient(to right, #40513B, #8d9b5b);
+    background: #7B68EE;
     color: white;
     padding-block: 15px;
     margin: 20px auto;

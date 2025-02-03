@@ -132,10 +132,10 @@ body {
 }
 
 .dropdown-menu button { /* Red for logout button */
-    color: white;
     border: none;
     padding: 8px 12px;
     cursor: pointer;
+    color: black;
     border-radius: 4px;
     width: 100%;
     text-align: center;
